@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <title>Textarea Auto resizing</title>
+    <style>
+        textarea
+        {
+            resize: none;
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        var textarea = null;
+        window.addEventListener("load", function() {
+            textarea = window.document.querySelector("textarea");
+            textarea.addEventListener("keypress", function() {
+                if(textarea.scrollTop != 0){
+                    textarea.style.height = textarea.scrollHeight + "px";
+                }
+            }, false);
+        }, false);
+    </script>
+</head>
+<body>
+    <textarea placeholder="When text overflows it automatically changes its height and width."></textarea>
+</body>
+</html>
+
+
+<!doctype html>
+<html>
+<head>
+    <title>Textarea Auto resizing</title>
+    <style>
+        textarea
+        {
+            resize: none;
+            overflow: hidden;
+            width: 500px;
+            min-height: 50px;
+            padding: 2px;
+            line-height: 13px;
+            font-size: 13px;
+           
+        }
+       
+        div
+        {
+            /*Don't make display as none. scrollHeight and offsetHeight is 0 for display property as none.*/
+            overflow: hidden;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+            width: 500px;
+            height: 0px;
+            padding: 2px;
+            line-height: 13px;
+            font-size: 13px;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function() {
+            //Don't use keypress event. keypress event doesn't detect backspace and delete keys.
+            window.document.querySelector("textarea").addEventListener("keydown", function() {
+                var content = window.document.querySelector("textarea").value;
+                window.document.querySelector("#divContainer").innerHTML = content;
+                window.document.querySelector("textarea").style.height = window.document.querySelector("#divContainer").scrollHeight + "px";
+            }, false);
+        }, false);
+    </script>
+</head>
+<body>
+    <div id="divContainer">
+    </div>
+    <textarea placeholder="When text overflows it automatically changes its height and width."></textarea>
+</body>
+</html>
