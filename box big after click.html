@@ -1,0 +1,35 @@
+<html>
+<style type="text/css">
+  display: inline-block;
+}
+
+label input {
+  display: none;
+}
+
+input:checked ~ #sample {
+  width: 150px;
+  height: 150px;
+}
+
+#sample {
+  width: 100px;
+  height: 100px;
+  background: #000000;
+}
+</style>
+<body>
+label {
+<label>
+  <input type="checkbox">
+  <div id="sample"></div>
+</label>
+</body>
+<!-- <script> // Creating a script tag to write JS
+var sampleDiv = document.getElementById('sample'); // Grabbing the sample  id
+
+sampleDiv.addEventListener('click', function(e) { // When someone clicks on it
+  sampleDiv.style.width = "200px"; // The width increases to 200px
+};
+</script> -->
+</html>
