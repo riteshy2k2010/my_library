@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+$('#on_livediv').on('click', on_livefunction);
+  $('#on_livediv').click(function(){
+    $("<p>The new paragraph, or child element of Div</p>").insertAfter("#livep");
+  });
+});
+ 
+function on_livefunction() {
+    alert("parent or child paragraph clicked");
+  }
+ 
+</script>
+<style>
+#on_livediv{
+width:250px;
+font-weight:bold;
+font-size:15px;
+padding:10px;
+border:1px solid red;
+}
+p{
+width:200px;
+font-weight:normal;
+border:1px solid green;
+padding:2px;
+}
+</style> 
+</head>
+ 
+<body>
+
+<div id="on_livediv">Parent Div element
+<p id="livep">Paragraph - child of parent div </p>
+</div>
+
+ 
+</body>
+ 
+</html>
+
