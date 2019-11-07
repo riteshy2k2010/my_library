@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvasa" width="200" height="100"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+
+var canvas = document.getElementById("myCanvasa");
+var ctx = canvas.getContext("2d");
+var cty = canvas.getContext("2d");
+ctx.moveTo(0,50);
+ctx.lineTo(200,50);
+ctx.stroke();
+
+cty.moveTo(100,0);
+cty.lineTo(100,100);
+cty.stroke();
+
+
+</script>
+
+
+<canvas id="myCanvass" width="200" height="100"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvass");
+var ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.arc(50,50,50,0,2*Math.PI);
+ctx.stroke();
+</script> 
+
+
+
+<canvas id="myCanvas" width="200" height="100"
+style="border:1px solid red;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.font = "35px lato";
+ctx.fillText("Hello World",20,50);
+</script>
+
+
+<canvas id="myCanvasq" width="200" height="100"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvasq");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
+
+</body>
+</html>
