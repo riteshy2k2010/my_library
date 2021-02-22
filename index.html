@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+:root{
+    --primary-color:#233c96;
+    --secondry-color:#fec70b;
+    --bg-color:#ccc;
+}
+.topheader{
+    padding: .5em 0;
+}
+
+.call_sec{
+    display: flex;
+    justify-content: flex-start;
+}
+.add_sec{
+    display: flex;
+    justify-content: flex-end;
+}
+.add_sec i,
+.call_sec i {
+    font-size: 18px;
+    line-height: 20px;
+    margin-right: .5em;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+}
+.logo img {
+    width: 250px;
+    margin: 1em;
+}
+.navigation ul ,
+.login_section ul{
+    list-style: none;
+    margin: 0;
+}   
+.navigation ul li{
+    display: inline-block;
+    padding: 2em;
+}
+.login_section ul li{
+    display: inline-block;
+    padding: 2em .5em;
+    text-transform: uppercase;;
+}
+.login_section ul li:last-child{
+    margin-right: 2em;
+}
+.navigation ul li a.nav_link{
+    color: var(--primary-color);
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .5s ease;
+    font-weight: 600;
+}
+.navigation ul li a:hover.nav_link{
+    color: var(--secondry-color);
+    font-weight: 600;
+}
+.space{
+    position: relative;
+    background-color: #fff;
+    z-index: 100;
+    background-color: blue;
+    margin-bottom: 80vh;
+    height: 200vh;
+}
+
+/* footer */
+footer{
+    padding: 10em 3em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    max-height: 80vh;
+     
+}
+footer ul.study_program{
+    list-style: none;
+}
+footer .study_program img{
+    height: 100px;
+    width: 100px;
+}
+footer .study_program    li{
+    display: inline-block;
+}
+footer .blog_footer img{
+    height: 80px;
+    width: 80px;
+}
+footer .blog_footer {
+    margin: 10px 10px 10px 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Header Start Area -->
+    <header>
+        <div class="topheader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 call_sec"><i class="fa fa-phone"></i> +91-123 3343 143</div>
+                    <div class="col-md-6 add_sec"><i class="fa fa-map-marker"></i> 1452, Market Path, New Delhi,
+                        India-110002./div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png" class="img-responsive">
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#!" class="nav_link">Home</a></li>
+                        <li><a href="#!" class="nav_link">About Us</a></li>
+                        <li><a href="#!" class="nav_link">Services</a></li>
+                        <li><a href="#!" class="nav_link">Portfolio</a></li>
+                        <li><a href="#!" class="nav_link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="login_section">
+                    <ul>
+                        <li><a href="#!" class="">Sign In</a></li>
+                        <li><a href="#!" class="">Sign Up</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <div class="space"></div>
+    <!-- Header End Area -->
+    <footer>
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer_about">
+                            <img src="images/logo.png" alt="" class="logo_footer img-responsive">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, facilis quibusdam.
+                            Commodi tempora soluta explicabo laudantium voluptatem nostrum doloremque minima dignissimos
+                            quisquam.</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-yelp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Study Programs</h3>
+                        <div class="program">
+                            <ul class="study_program">
+                                <li> <img src="https://source.unsplash.com/user/erondu/1600x1600" alt="" srcset="" class="img-responsive"> </li>
+                                <li> <img src="https://source.unsplash.com/user/erondu/1600x1600" alt="" srcset="" class="img-responsive"> </li>
+                                <li> <img src="https://source.unsplash.com/user/erondu/1600x1600" alt="" srcset="" class="img-responsive"> </li>
+                                <li> <img src="https://source.unsplash.com/user/erondu/1600x1600" alt="" srcset="" class="img-responsive"> </li>
+                                <li> <img src="https://source.unsplash.com/user/erondu/1600x1600" alt="" srcset="" class="img-responsive"> </li>
+                                <li> <img src="https://source.unsplash.com/user/erondu/1600x1600" alt="" srcset="" class="img-responsive"> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Our Blogs</h3>
+                        <div class="row blog_footer">
+                            <div class="col-md-3">
+                                <img src="https://source.unsplash.com/user/erondu/1600x1600" alt="" srcset="">
+                            </div>
+                            <div class="col-md-9">
+                                <h6>Lorem ipsum dolor sit amet </h6>
+                                <p>Cumque, facilis quibusdam. Commodi tempora  </p>
+                            </div>
+                        </div>
+                        <div class="row blog_footer">
+                            <div class="col-md-3">
+                                <img src="https://source.unsplash.com/user/erondu/1600x1600" alt="" srcset="">
+                            </div>
+                            <div class="col-md-9">
+                                <h6>Lorem ipsum dolor sit amet </h6>
+                                <p>Cumque, facilis quibusdam. Commodi tempora  </p>
+                            </div>
+                        </div>
+                        <div class="row blog_footer">
+                            <div class="col-md-3">
+                                <img src="https://source.unsplash.com/user/erondu/1600x1600" alt="" srcset="">
+                            </div>
+                            <div class="col-md-9">
+                                <h6>Lorem ipsum dolor sit amet </h6>
+                                <p>Cumque, facilis quibusdam. Commodi tempora  </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Join Us</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
